@@ -9,16 +9,16 @@
       <% if @path == 'index' %>
         <%= title %>
       <% elsif @path.split('/').compact.length == 4 %>
-        <%= title %> - Michael Joseph Kramer
+        <%= title %> - <%= @config[:title] %>
       <% else %>
-        <%= @path.capitalize.gsub(/[-]/, ' ') %> - Michael Joseph Kramer
+        <%= @path.capitalize.gsub(/[-]/, ' ') %> - <%= @config[:title] %>
       <% end %>
 
     </title>
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-592651-4']);
+      _gaq.push(['_setAccount', '<%= @config[:analytics] %>']);
       _gaq.push(['_trackPageview']);
 
       (function() {
