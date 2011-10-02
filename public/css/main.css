@@ -1,5 +1,7 @@
 html { margin: 20px }
-body {
+
+body 
+{
   margin: 0 auto;
   font-family: 'Cabin', sans-serif;
   font-size: 20px;
@@ -7,13 +9,16 @@ body {
   width: 1024px;
 
 }
-header, footer, section, article, aside {
+
+header, footer, section, article, aside 
+{
 	display: block;
 }
 
-#about {
-float: left;
-width: 350px;
+#about 
+{
+  float: left;
+  width: 350px;
 }
 
 #about div#social-media {
@@ -24,7 +29,6 @@ width: 350px;
   float: left;
 }
 
-
 #about div > p
 {
   font-family: 'Philosopher', sans-serif;
@@ -34,80 +38,91 @@ width: 350px;
   margin-left: 40px;
 }
 
-#content {
+#content
+{
   float: left;
   width: 650px;
 }
-#by {
-	font-style: italic;
-  margin-right: 5px;
-	font-size: 28px;
-}
-#caption {
-	position: absolute;
-	font-size: 24px;
-	margin: -135px 0 0 70px;
-}
-#path {
-	color: #b53131;
-}
-.date {
+
+.date 
+{
   font-style: italic;
   float: right;
   line-height: 43px;
   margin-right: 30px;
 }
-a, hr {
+
+a, hr 
+{
   color: #FF6600;
-  
 }
 
-hr {
+hr 
+{
   color: #FF6600;
   background-color: #FF6600;
   height: 2px;
 }
-h1 a {
+
+h1 a 
+{
   color: black;
   text-decoration: none;
 }
-a:hover {
+
+a:hover 
+{
   text-decoration: underline;
 }
 
-body > header > h1 {
+body > header > h1 
+{
   font-size: 60px;
   font-family: 'Puritan', sans-serif;
   font-weight: normal;
 }
 
-.post header {
+.post header 
+{
 	margin-bottom: 10px;
 }
-.post .body p:first-child {
+.post .body p:first-child 
+{
 	margin-top: 0;
 }
-.post .body p:last-child {
+
+.post .body p:last-child 
+{
 	margin-bottom: 0;
 }
+
 .post {
 	margin-bottom: 30px;
 }
-.post:last-child {
+
+.post:last-child 
+{
   margin-bottom: 10px;
 }
-.post p {
+
+.post p 
+{
   margin: 10px 0;
 }
-.post .more {
+
+.post .more 
+{
   margin-top: -10px;
   margin-right: 30px;
   font-style: italic;
   text-align: right;
 }
-.more a {
+
+.more a 
+{
   text-decoration: none;
 }
+
 .more a:hover { text-decoration: underline }
 
 body > header {
@@ -116,20 +131,13 @@ body > header {
 	margin-bottom: 20px;
 }
 
-body > header > h6 {
-  margin: 0px;
-  padding: 0px;
-  color: #888;
-  font-style: italic;
-  font-weight: normal;
-}
-
 h1, h2, h3, h4 {
   display: inline;
   margin: 0;
   font-weight: normal;
   font-size: 25px;
 }
+
 ul, li {
   list-style-type: none;
 }
@@ -143,7 +151,8 @@ blockquote {
   font-style: italic;
 }
 
-body > footer {
+body > footer 
+{
   font-family: 'Philosopher', sans-serif;
   clear: both;
   text-align: left;
@@ -151,4 +160,13 @@ body > footer {
 	font-style: italic;
   font-size: 16px;
   color: #888;
+}
+
+div#subtitle
+{
+  margin: 0px;
+  padding: 0px;
+  color: #888;
+  font-style: italic;
+  font-weight: normal;
 }

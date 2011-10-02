@@ -40,6 +40,7 @@ toto = Toto::Server.new do
   set :ext, 'md'
   set :facebook, 'MichaelJosephKramer'
   set :linkedin, 'MichaelJosephKramer'
+  set :subtitle, 'because two names just isn\'t enough.  .  .'
   set :summary, :max => 1000, :delim => /~\n/
   set :title, 'Michael Joseph Kramer'
   set :twitter, 'MichaelKramer'

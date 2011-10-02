@@ -7,13 +7,17 @@ task :default => :new
 desc "Create a new article."
 task :new do
   title = ask('Title: ')
-  slug = title.empty?? nil : title.strip.slugize
+  raw_date = ask('Date: ')
+  description = ask('Description: ')
 
-  article = {'title' => title, 'date' => Time.now.strftime("%d/%m/%Y")}.to_yaml
+  slug = title.empty?? nil : title.strip.slugize
+  date = Date.parse raw_date
+
+  article = {'title' => title, 'date' => date.strftime("%Y/%m/%d"), 'description' => description}.to_yaml 
   article << "\n"
   article << "Once upon a time...\n\n"
 
-  path = "#{Toto::Paths[:articles]}/#{Time.now.strftime("%Y-%m-%d")}#{'-' + slug if slug}.#{@config[:ext]}"
+  path = "#{Toto::Paths[:articles]}/#{date.strftime("%Y-%m-%d")}#{'-' + slug if slug}.md"
 
   unless File.exist? path
     File.open(path, "w") do |file|

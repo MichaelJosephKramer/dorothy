@@ -32,8 +32,10 @@
    </head>
    <body>
      <header>
-     <h1><a href="/">Michael Joseph Kramer</a></h1>
-     <h6>because two names isn't enough.  .  .</h6>
+     <h1><a href="/"><%= @config[:title] %></a></h1>
+     <% if @config[:subtitle] %>
+       <div id="subtitle"><%= @config[:subtitle] %></div>
+     <% end %>
      <hr />
      </header>
      <section id="content">
@@ -41,11 +43,11 @@
      </section>
      <aside id='about'>
        <div id='social-media'>
-         <a href="/index.xml" target="_blank"><img src="/images/rss.png" /></a>
-         <a href="http://twitter.com/#!/<%= @config[:twitter] %>" target="_blank"><img src="/images/twitter.png" /></a>
-         <a href="http://www.facebook.com/<%= @config[:facebook] %>" target="_blank"><img src="/images/facebook.png" /></a>
-         <a href="http://linkedin.com/in/<%= @config[:linkedin] %>" target="_blank"><img src="/images/linkedin.png" /></a>
-         <a href="mailto:<%= @config[:email] %>"><img src="/images/gmail.png" /></a>
+         <a href="/index.xml" target="_blank"><img src="/images/rss.png" width="64px" height="64px" /></a>
+         <a href="http://twitter.com/#!/<%= @config[:twitter] %>" target="_blank"><img src="/images/twitter.png" width="64px" height="64px" /></a>
+         <a href="http://www.facebook.com/<%= @config[:facebook] %>" target="_blank"><img src="/images/facebook.png" width="64px" height="64px"  /></a>
+         <a href="http://linkedin.com/in/<%= @config[:linkedin] %>" target="_blank"><img src="/images/linkedin.png" width="64px" height="64px" /></a>
+         <a href="mailto:<%= @config[:email] %>"><img src="/images/gmail.png" width="64px" height="64px" /></a>
          <hr />
        </div>
        <div id="bio">
