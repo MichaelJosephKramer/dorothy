@@ -31,14 +31,18 @@ toto = Toto::Server.new do
   set :author, 'Michael Joseph Kramer'
   set :disqus, 'michaeljosephkramer'
   set :date, lambda {|now| now.strftime("%B #{now.day.ordinal}, %Y") }
+  set :email, 'mjk@michaeljosephkramer.com'
 
   set :error do |code|
     "<font style='font-size:300%'>You broke my blog. Thanks alot. Here's your excuse code: #{code}.</font>"
   end
 
   set :ext, 'md'
+  set :facebook, 'MichaelJosephKramer'
+  set :linkedin, 'MichaelJosephKramer'
   set :summary, :max => 1000, :delim => /~\n/
   set :title, 'Michael Joseph Kramer'
+  set :twitter, 'MichaelKramer'
   set :url, 'http://michaeljosephkramer.com'
 end
 

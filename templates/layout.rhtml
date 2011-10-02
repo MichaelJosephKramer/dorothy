@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
+    <link href='http://fonts.googleapis.com/css?family=Cabin|Philosopher|Puritan' rel='stylesheet' type='text/css'>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
     <meta name="description" content="<%= @context[:description] || 'Michael Joseph Kramer' %>" />
     <title>
@@ -30,11 +31,34 @@
      </script>
    </head>
    <body>
-     <section>
+     <header>
+     <h1><a href="/">Michael Joseph Kramer</a></h1>
+     <h6>because two names isn't enough.  .  .</h6>
+     <hr />
+     </header>
+     <section id="content">
      <%= yield %> 
      </section>
-     <footer>
-     powered by <a href="http://cloudhead.io/toto">toto</a>
+     <aside id='about'>
+       <div id='social-media'>
+         <a href="/index.xml" target="_blank"><img src="/images/rss.png" /></a>
+         <a href="http://twitter.com/#!/<%= @config[:twitter] %>" target="_blank"><img src="/images/twitter.png" /></a>
+         <a href="http://www.facebook.com/<%= @config[:facebook] %>" target="_blank"><img src="/images/facebook.png" /></a>
+         <a href="http://linkedin.com/in/<%= @config[:linkedin] %>" target="_blank"><img src="/images/linkedin.png" /></a>
+         <a href="mailto:<%= @config[:email] %>"><img src="/images/gmail.png" /></a>
+         <hr />
+       </div>
+       <div id="bio">
+         <p>
+         Michael Joseph Kramer is a passionate software developer focusing on quality, testing, and agile practices. Recently he has been digging into Node.js and JavaScript, CoffeeScript, and he is still trying not to spill the Ruby Kool-Aid all over his shirt.
+         </p>
+         <p>
+         Michael is located in Columbus, OH.
+         </p>
+       </div>
+       </aside>
+       <footer>
+       &copy; Michael Joseph Kramer 2011
      </footer>
    </body>
  </html>
