@@ -1,7 +1,3 @@
-require 'toto'
-
-@config = Toto::Config::Defaults
-
 task :default => :new
 
 desc "Create a new article."
@@ -11,9 +7,9 @@ task :new do
   description = ask('Description: ')
 
   slug = title.empty?? nil : title.strip.slugize
-  date = Date.parse raw_date
+  date = raw_date.empty?? Time.now : Date.parse(raw_date)
 
-  article = {'title' => title, 'date' => date.strftime("%Y/%m/%d"), 'description' => description}.to_yaml 
+  article = {'title' => title, 'author' => 'Michael Joseph Kramer', 'date' => date.strftime("%Y/%m/%d"), 'description' => description}.to_yaml 
   article << "\n"
   article << "Once upon a time...\n\n"
 
@@ -33,6 +29,8 @@ desc "Publish my blog."
 task :publish do
   toto "publishing your article(s)..."
   `git push heroku master`
+  toto "pushing to github..."
+  `git push origin master`
 end
 
 def toto msg
