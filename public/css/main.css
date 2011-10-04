@@ -7,7 +7,7 @@ body
   font-size: 20px;
   padding: 12px;
   width: 1024px;
-
+  line-height: 30px;
 }
 
 header, footer, section, article, aside 
@@ -109,7 +109,7 @@ body > header > h1
 
 .post p 
 {
-  margin: 10px 0;
+  /*margin: 10px 0;*/
 }
 
 .post .more 
@@ -140,9 +140,6 @@ h1, h2, h3, h4 {
   font-size: 25px;
 }
 
-ul, li {
-  list-style-type: none;
-}
 code {
   font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
 }
