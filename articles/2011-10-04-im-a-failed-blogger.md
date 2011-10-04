@@ -7,7 +7,7 @@ description: Tools used to build this blog with Ruby and Toto
 Blogging has long been my mortal enemy. In fact, I've had more blog reboots than blog posts during my battle. This one is #4, and this time I'm determined to make it work. I swear.~
 
 
-I wish I had a good excuse for not blogging more, but I won't bother to tell you my dog ate my homework. I do plan on writing about agile practices, Ruby, Node.js and JavaScript, CoffeeScript, and maybe a little .NET. This blog's reboot, in fact, was created with a Ruby blog engine called toto. 
+I wish I had a good excuse for not blogging more, but I won't bother to tell you my dog ate my homework. I do plan on writing about agile practices, Ruby, Node.js and JavaScript, CoffeeScript, and maybe a little .NET. This blog's reboot, in fact, was created with a Ruby blog engine called Toto. 
 
 Having rebooted my blog three times already, I did learn what I didn't like, and I had a small set of requirements:
 
@@ -30,7 +30,7 @@ Source Code:
 Helpful Blog Posts and Resources:
 
 - <http://fadeyev.net/2010/05/10/getting-started-with-toto>
-- [The icon set I used](http://webtreats.mysitemyway.com/154-matte-black-social-media-icons/comment-page-2/#comment-134603)
+- [The icon set I used](http://webtreats.mysitemyway.com/154-matte-black-social-media-icons)
 - [Markdown Reference](http://daringfireball.net/projects/markdown/)
 - [vim-markdown Plugin](https://github.com/tpope/vim-markdown)
 
