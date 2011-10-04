@@ -1,3 +1,5 @@
+require 'toto'
+
 task :default => :new
 
 desc "Create a new article."
