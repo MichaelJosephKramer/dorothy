@@ -29,6 +29,7 @@ toto = Toto::Server.new do
 
   set :analytics, 'UA-592651-4'
   set :author, 'Michael Joseph Kramer'
+  set :clicky, '66487006'
   set :disqus, 'michaeljosephkramer'
   set :date, lambda {|now| now.strftime("%B #{now.day.ordinal}, %Y") }
   set :email, 'mjk@michaeljosephkramer.com'
