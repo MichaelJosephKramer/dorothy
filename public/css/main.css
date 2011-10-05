@@ -7,7 +7,7 @@ body
   font-size: 20px;
   padding: 12px;
   width: 1024px;
-  line-height: 30px;
+  line-height: 1.5;
 }
 
 header, footer, section, article, aside 
@@ -42,9 +42,15 @@ img { border: 0px;}
 
 #content
 {
-  float: left;
-  width: 650px;
+   float: left;
+   width: 650px;
 }
+
+.content, .comments
+{
+  font-size: 16px;
+}
+
 
 .date 
 {
