@@ -7,7 +7,9 @@ description: A description and tutorial for npm installation
 Node.js is relatively new, and while the newness brings a lack of standardization among tools and packages, the community seems to have settled on NPM as the de facto standard package manager. ~
 
 
-The intertubes already have several resources about the basic NPM functionality so I won't rehash them in detail, but it has the basic commands you'd expect from a package manager:
+After you install Node.js, you'll probably want to install npm as well. A few other package managers are out there, 
+
+The intertubes already have several resources about the basic npm functionality so I won't rehash them in detail, but it has the basic commands you'd expect from a package manager:
 
 - `npm install <package>`
 - `npm uninstall <package>`
@@ -16,6 +18,10 @@ The intertubes already have several resources about the basic NPM functionality 
 - `npm version`
 
 The usual suspects are all there. A quick "`npm help`" will show you the full list.
+
+## Should I compile Node.js myself, or use a package manager like Homebrew?
+
+I've done both, and compiling Node.js yourself isn't as hard as it sounds. Installing it from a package manager is even easier. While a new Node.js release comes every couple of weeks, you can quickly install newer versions and switch between them using a version manager like n or nave.
 
 ## NPM Installation: to chown or not to chown?
 
@@ -33,7 +39,6 @@ I did. You'll want to install some npm packages globally, and for that to work y
 
 ## Umm, thanks?
 
-For the tl;dr crowd, don't spend as much time as I spent thinking about the npm installation. Install it based on your personal preference, and it'll probably work just fine. While at first I was looking for a 'just do this' blog post, now I appreciate the multiple configuration options.
+For the tl;dr crowd, don't spend as much time as I spent thinking about the npm installation. Install it based on your personal preference, and it'll probably work just fine, especially if you're on a one-user development machine. While at first I was looking for a 'just do this' blog post, now I appreciate the multiple configuration options.
 
 In an upcoming post, I'll detail some tips and tricks for using npm.
-
