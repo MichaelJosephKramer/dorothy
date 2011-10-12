@@ -40,7 +40,7 @@ Since Node.js is a relatively new platform, the ecosystem hasn't really declared
 
 ### Um, I chowned, but it seems to be a Coke or Pepsi type of question.
 
-The installation methods in the [gist][gist] fall into two camps: some install into the home directory and some install into the `\usr\bin` directory. To install into the `\usr\bin` directory and work with Node.js, you either have to take ownership of that directory with the `chown` command or use `sudo` when executing commands.
+The installation methods in the [gist][gist] fall into two camps: some install into the home directory and some install into the `/usr/local` directory. To install into the `/usr/local` directory and work with Node.js, you either have to take ownership of that directory with the `chown` command or use `sudo` when executing commands.
 
 As I criss-crossed the internet to find a simple answer for the "right" way to install it, I found I was in a deeper rabbit hole than I thought. 
 
@@ -71,6 +71,8 @@ Yup. You'll want to install some npm packages globally, and for that to work you
 When I installed Node.js, I just wanted to start writing some code. While I do appreciate all the installation options now that I understand them a little better, I spent too much time looking at Ubuntu forum posts to find out if my permissions were wrong. So if this distilled version gets you coding faster, then my work here is done.
 
 Happy Coding!
+
+*Update: I originally said `/usr/bin` a couple of times when I meant `/usr/local`. I've made the correction. Sorry for any confusion.*
 
 [gist]: https://gist.github.com/579814 "https://gist.github.com/579814 "the installation gist"
 [homebrew]: https://github.com/mxcl/homebrew/wiki/FAQ "Homebrew" 
