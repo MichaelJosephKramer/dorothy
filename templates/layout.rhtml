@@ -35,14 +35,14 @@
    </head>
    <body>
      <header>
-     <h1><a href="/"><%= @config[:title] %></a></h1>
-     <% if @config[:subtitle] %>
-       <div id="subtitle"><%= @config[:subtitle] %></div>
-     <% end %>
-     <hr />
+       <h1><a href="/"><%= @config[:title] %></a></h1>
+       <% if @config[:subtitle] %>
+         <div id="subtitle"><%= @config[:subtitle] %></div>
+       <% end %>
+       <hr />
      </header>
      <section id="content">
-     <%= yield %> 
+      <%= yield %> 
      </section>
      <aside id='about'>
        <div id='social-media'>
@@ -61,8 +61,8 @@
          Michael is located in Columbus, OH.
          </p>
        </div>
-       </aside>
-       <footer>
+     </aside>
+     <footer>
        &copy; Michael Joseph Kramer 2011
      </footer>
    </body>
