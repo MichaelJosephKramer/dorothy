@@ -74,5 +74,5 @@ Happy Coding!
 
 *Update: I originally said `/usr/bin` a couple of times when I meant `/usr/local`. I've made the correction. Sorry for any confusion.*
 
-[gist]: https://gist.github.com/579814 "https://gist.github.com/579814 "the installation gist"
+[gist]: https://gist.github.com/579814 "the installation gist"
 [homebrew]: https://github.com/mxcl/homebrew/wiki/FAQ "Homebrew" 
