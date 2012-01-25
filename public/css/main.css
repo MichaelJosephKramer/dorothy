@@ -53,8 +53,8 @@ img { border: 0px;}
 
 .date 
 {
+  font-size: 18px;
   font-style: italic;
-  float: right;
   margin-right: 30px;
 }
 
