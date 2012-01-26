@@ -6,7 +6,7 @@ description: A quick tutorial on starting with Ruby and Albacore on Windows
 
 There exists two types of develpers: those who have written Ruby and those who would like to punch those who have written Ruby in the face.
 
-If you're a .NET developer and have never written Ruby, I might be able to convert you from the latter to the former. Writing an entire application in Ruby might not be feasible in your organization, especially if you work in a .NET shop, but writing your build script in Ruby an easier battle if you're picking your fights. Thankfully, a gem called Albacore can make build scripts a breeze with just a little bit of code.
+If you're a .NET developer and have never written Ruby, I might be able to convert you from the latter to the former. Writing an entire application in Ruby might not be feasible in your organization, especially if you work in a .NET shop, but writing your build script in Ruby an easier battle if you're picking your fights. Thankfully, a gem called Albacore can make build scripts a breeze with just a little bit of code. ~
 
 ## What's Albacore? Wait, what's a gem? And what's this "Rake" you're about to mention?
 We'll start with gems, and if you're familiar with NuGet, it's the same deal -- code libraries that you can install via the internet. [Albacore][albacore] is a gem, and it's a collection of Rake tasks that automate building a .NET application. And Rake is a Ruby task manager that makes running simple scripts simple, and adds in some functionality like prerequisites, defaults, and namespacing. Thankfully, you don't need to be an expert in Rake or the gem system to be able to use start building .NET apps with Albacore.
