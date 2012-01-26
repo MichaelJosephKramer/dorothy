@@ -36,14 +36,14 @@ The example contains four pretty task that are most likely common on most .NET a
       msb.solution = "FizzBuzz.sln"
     end
 
-To run this task, just type <code>rake build</code> in the directory with the rakefile. Any given directory can only contain one rakefile, named "rakefile" with no extension.
+To run this task, just type <code>rake build</code> in the directory with the rakefile. Any given directory can only contain one rakefile, usually named "rakefile" with no extension, although the file name is [flexible][casing].
 
 - The first line is a description that you can see by issuing a <code>rake -T</code> at the command line to view the available tasks in the rakefile. This line isn't strictly necessary, but helpful. 
 - The next line has the Albacore task type (msbuild) and the arbitrary task name (:build). 
 - The next few lines are simply setting options, and if you're familiar with the MSBuild options then you'll see that they're the same. 
 - The line before the end is just a path to the solution file.
 
-The file also contains tasks that build the application in a release configuration, another that runs the unit tests, and one that uses Nokogiri to update the connection string in the 
+The file also contains tasks that build the application in a release configuration, another that runs the unit tests, and one that uses Nokogiri to update the connection string in the config file.
 
 ## Why would I want to do this again?
 Did you notice there's no XML?
@@ -64,3 +64,4 @@ If you're worried about crossing over the Ruby world, creating your .NET build s
 [railsinstaller]: http://http://railsinstaller.org/ "Rails Installer"
 [example]: https://github.com/MichaelJosephKramer/Albacore-Example "Example"
 [gitsetup]: http://help.github.com/win-set-up-git/ "Git Setup"
+[casing]: https://github.com/derickbailey/Albacore/wiki/Getting-Started "Rakefile Casing"
