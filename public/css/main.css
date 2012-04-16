@@ -2,12 +2,13 @@ html { margin: 20px }
 
 body 
 {
-  margin: 0 auto;
+  background-image: url('/images/square_bg.png');
   font-family: 'Cabin', sans-serif;
   font-size: 20px;
+  line-height: 1.5;
+  margin: 0 auto;
   padding: 12px;
   width: 1024px;
-  line-height: 1.5;
 }
 
 header, footer, section, article, aside 
