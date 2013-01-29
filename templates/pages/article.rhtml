@@ -1,10 +1,19 @@
 <article class="post">
+
   <header>
-    <h1><%= title %></h1>
-    <div class="date">Posted on <%= date %></div>
+
+    <div id="title">
+      <h1><%= title %></h1>
+      <div class="date">Posted on <%= date %></div>
+    </div>
+
+    <div id="rss-icon" >
+      <a href="http://feeds.feedburner.com/<%= @config[:feedburner] %>" target="_blank" title="RSS"><img src="/images/rss.png" width="64px" height="64px" alt="RSS" /></a>
+    </div>
+
   </header>
 
-  <section class="content">
+  <section class="content" style="clear:both">
     <%= body %>
   </section>
 
@@ -18,5 +27,5 @@
       <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
     <% end %>
   </section>
-</article>
 
+</article>

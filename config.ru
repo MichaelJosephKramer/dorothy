@@ -31,6 +31,7 @@ toto = Toto::Server.new do
 
   set :analytics, 'UA-592651-4'
   set :author, 'Michael Joseph Kramer'
+  set :bio, '<p>Michael Joseph Kramer is a passionate software developer focusing on quality, testing, and agile practices. Recently he has been digging into Node.js and JavaScript, CoffeeScript, and he is still trying not to spill the Ruby Kool-Aid all over his shirt.</p><p>Michael is located in Columbus, OH.</p>'
   set :clicky, '66487006'
   set :disqus, 'michaeljosephkramer'
   set :date, lambda {|now| now.strftime("%B #{now.day.ordinal}, %Y") }
