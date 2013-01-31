@@ -1,5 +1,5 @@
 <section id="articles">
-  <% articles.select {|a| a[:date] <= Date.today}[0...10].each do |article| %>
+  <% articles.select {|a| a[:date] <= Date.today}[0...5].each do |article| %>
     <article class="teaser">
       <header>
         <h1><a href="<%= article.path %>"><%= article.title %></a></h1>
@@ -28,8 +28,8 @@
   </div>
 </aside>
 
-<% if archives.length > 10 %>
+<% if archives.length > 5 %>
   <section id="archives">
-    <%= archives[11..-1] %>
+    <%= archives[5..-1] %>
   </section>
 <% end %>
