@@ -46,7 +46,7 @@ toto = Toto::Server.new do
   set :feedburner, 'MichaelJosephKramer'
   set :linkedin, 'MichaelJosephKramer'
   set :subtitle, 'because two names just isn\'t enough.  .  .'
-  set :summary, :max => 1000, :delim => /~\n/
+  set :summary, :max => 25, :delim => /~\n/
   set :title, 'Michael Joseph Kramer'
   set :twitter, 'MichaelKramer'
   set :url, 'http://michaeljosephkramer.com'
