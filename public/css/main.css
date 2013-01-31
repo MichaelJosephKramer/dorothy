@@ -45,21 +45,25 @@ a:hover { text-decoration: underline; }
 
 blockquote { font-style: italic; }
 
-code { font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono; }
+code { 
+  font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
+  font-size: 16px;
+  padding: 0 3px 3px 0;
+}
 
 h1, h2, h3, h4 { font-weight: normal; }
 
-h1 { 
-  font-size: 25px; 
-  display: inline;
-}
+h1 { display: inline; }
 
 h1 a {
   color: black;
   text-decoration: none;
 }
 
-h2 { font-size: 20px; }
+h2 { 
+  font-size: 25px;
+  font-weight: bold; 
+}
 
 h3 { 
   font-style: italic;
@@ -154,3 +158,5 @@ div#subtitle {
 .post #title h1 { font-size: 40px; }
 
 .post #rss-icon { float:left; }
+
+.post .content { margin-bottom: 50px; }

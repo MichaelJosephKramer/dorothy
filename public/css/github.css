@@ -1,10 +1,8 @@
 .gist A { color: #FF6600 !important; }
-
+.gist { font-size: 14px; width: 90%; margin-left: 5% }
 .gist .gist-file .gist-data { background-color: transparent !important; }
 
 .gist-highlight { padding: 20px 0 20px 10px !important; }
-
-.line { font-size: 14px; }
 
 .gist-meta {
   background-color: transparent !important;
