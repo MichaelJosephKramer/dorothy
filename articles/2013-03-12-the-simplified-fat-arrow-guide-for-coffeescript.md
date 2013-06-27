@@ -26,11 +26,11 @@ Context in CoffeeScript, and JavaScript, generally follows a few simple rules. T
 3. If the function is an event handler or callback, the context is the event owner or caller. Here, it's `button`:  
 `button.onClick(makeManhattan)`  
 
-Rule #3 starts to get a little tricky when an event handler is passed around:
+Rule #3 starts to get a little tricky when callbacks are passed around:
 
 <script src="https://gist.github.com/MichaelJosephKramer/6991081816575972a2ad.js"></script>
 
-Backbone is going to do what Backbone does -- assign the event handlers based on the jQuery selectors in the event object on line 5. `bourbonHandler` and `ryeHandler` both access the `drinkName` function. If you don't use the fat arrow in this case, those handlers won't have access to the `drinkName` function at runtime.
+In this example, you'll get an nasty message when you change the fat arrows to thin arrows in the `Bartender` class. Feel free to play with it here: [http://jsfiddle.net/uxCCD/7/](http://jsfiddle.net/uxCCD/7/ "http://jsfiddle.net/uxCCD/7/")
 
 ## Can I Just Use the Fat Arrow All The Time?
 
