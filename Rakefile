@@ -27,14 +27,6 @@ task :new do
   end
 end
 
-desc "Publish my blog."
-task :publish do
-  toto "publishing your article(s)..."
-  `git push heroku master`
-  toto "pushing to github..."
-  `git push origin master`
-end
-
 def toto msg
   puts "\n  toto ~ #{msg}\n\n"
 end
