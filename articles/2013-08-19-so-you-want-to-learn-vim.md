@@ -1,7 +1,7 @@
 ---
 title: So you want to learn Vim?
 author: Michael Joseph Kramer
-date: 2013/07/19
+date: 2013/08/19
 description: A tutorial and tricks for learning vim
 
 I've been using vim almost exclusively for the last two years, and I can't argue with the critics that say it has steep learning curve -- sometimes I feel like I still barely know how to use it. Here are some tips that should help if you're ready to dive in:
