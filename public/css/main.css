@@ -160,3 +160,9 @@ div#subtitle {
 .post #rss-icon { float:left; }
 
 .post .content { margin-bottom: 50px; }
+
+.post .content IMG {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
