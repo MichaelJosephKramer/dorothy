@@ -11,11 +11,11 @@ The last great unexplored region of git is the .git directory. Once you start to
 
 If you navigate into your .git directory, then into the info directory, you'll see a file called 'exclude'. If you open it up, you'll see something like this:
 
-![.git exclude file](/images/git-exclude.png)
+![.git exclude file][before]
 
 That should look familiar, like, say, a .gitignore. It works pretty much like a .gitignore too
 
-![.git exclude file](/images/git-exclude-content.png)
+![.git exclude file][after]
 
 ## That's fantastic! Why would I want to do that? Um, .gitignore?
 
@@ -24,3 +24,6 @@ While this may seem like something you can already do more easily, using the exc
 Be aware, if you blow away your repository, your exclude file will go with it, since it's not committed like a .gitignore.  
 
 While this won't ever replace the .gitignore file, you can never have too many tools in your toolbox. Happy hiding.
+
+[before]: http://michaeljosephkramer.com/images/git-exclude.png
+[after]: http://michaeljosephkramer.com/images/git-exclude-content.png
